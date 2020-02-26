@@ -6,10 +6,23 @@ Top Dialog                 |      Center Dialog        |      Bottom Dialog
 ![alt text](https://raw.githubusercontent.com/CASH-IT-Developer/cashitDialog/master/top.jpeg)  |  ![alt text](https://raw.githubusercontent.com/CASH-IT-Developer/cashitDialog/master/center.jpeg)  |  ![alt text](https://raw.githubusercontent.com/CASH-IT-Developer/cashitDialog/master/bottom.jpeg)
 
 
-## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
-
 ### How To Use
      implementation "com.github.CASH-IT-Developer:cashitDialog:1.0.0"
+     ...
+     ...
+     
+     
+### `and` 
+     
+     allprojects {
+         repositories {
+             google()
+             maven { url "https://maven.google.com" }
+             ...
+             ...
+         }
+     }
+
 
 ### Implementation in Programatically
 
