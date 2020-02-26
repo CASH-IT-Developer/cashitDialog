@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cashitDlgColorPrimary">#FACA00</color>
+    <color name="cashitDlgColorSecondary">#262626</color>
+    <color name="cashitDlgColorThirtiary">#FFE163</color>
+    <color name="cashitDlgColorgrey">#C9ACACAC</color>
+    <color name="cashitDlgColorWhite">#FFFFFF</color>
+    <color name="cashitdialog_button_black_text_color">#000000</color>
+    <color name="cashitdialog_button_drawable_stroke">#0d000000</color>
+    <color name="cashitdialog_default_background_color">#B3000000</color>
+    <color name="cashitdialog_default_card_background_color">#FFFFFF</color>
+    <color name="cashitdialog_desc_font_color">#262626</color>
+    <color name="cashitdialog_title_font_color">#000000</color>
+    <dimen name="cashitdialog_button_corner_radius">24dp</dimen>
+    <dimen name="cashitdialog_button_padding">10dp</dimen>
+    <dimen name="cashitdialog_center_margin">14dp</dimen>
+    <dimen name="cashitdialog_button_padding_button_horiz">4dp</dimen>
+    <dimen name="cashitdialog_button_text_font_size">14sp</dimen>
+    <dimen name="cashitdialog_card_corner_radius">4dp</dimen>
+    <dimen name="cashitdialog_card_elevation">4dp</dimen>
+    <dimen name="cashitdialog_description_font_size">14sp</dimen>
+    <dimen name="cashitdialog_footer_top_margin_half">10dp</dimen>
+    <dimen name="cashitdialog_header_bottom_margin_half">10dp</dimen>
+    <dimen name="cashitdialog_icon_dimen">32dp</dimen>
+    <dimen name="cashitdialog_imageview_top_margin">10dp</dimen>
+    <dimen name="cashitdialog_internal_spacing">10dp</dimen>
+    <dimen name="cashitdialog_internal_spacing_half">5dp</dimen>
+    <dimen name="cashitdialog_maxwidth">400dp</dimen>
+    <dimen name="cashitdialog_outer_margin">0dp</dimen>
+    <dimen name="cashitdialog_padding">20dp</dimen>
+    <dimen name="cashitdialog_padding_half">10dp</dimen>
+    <dimen name="cashitdialog_title_font_size">20sp</dimen>
+    <integer name="cashitdialog_animation_duration">300</integer>
+    <integer name="cashitdialog_animation_duration_200">200</integer>
+    <integer name="cashitdialog_animation_duration_400">400</integer>
+    <integer name="cashitdialog_animation_duration_500">500</integer>
+
+    <string name="placeholder_message">This is a message to be displayed on the alert.</string>
+
+    <string name="placeholder_title">Title</string>
+
+    <string name="app_name">CashitDialog</string>
+
+    <style name="cashitdialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/cashitdialog.Animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+    <style name="cashitdialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/alert_present</item>
+        <item name="android:windowExitAnimation">@anim/alert_dismiss</item>
+    </style>
+    <style name="cashitdialog.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/cashitdialog_button_text_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="cashitdialog.ButtonsContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="cashitdialog.Card" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clipChildren">true</item>
+    </style>
+    <style name="cashitdialog.ContentImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/cashitdialog_imageview_top_margin</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="cashitdialog.IconImage">
+        <item name="android:layout_width">@dimen/cashitdialog_icon_dimen</item>
+        <item name="android:layout_height">@dimen/cashitdialog_icon_dimen</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="cashitdialog.Message">
+        <item name="android:textSize">@dimen/cashitdialog_description_font_size</item>
+        <item name="android:textColor">@color/cashitdialog_desc_font_color</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="cashitdialog.Title">
+        <item name="android:textSize">@dimen/cashitdialog_title_font_size</item>
+        <item name="android:textColor">@color/cashitdialog_title_font_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>

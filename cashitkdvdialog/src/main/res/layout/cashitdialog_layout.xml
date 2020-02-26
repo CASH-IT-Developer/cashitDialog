@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cashitdialog_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:clickable="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/cashitdialog_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cashitdialog_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:clipChildren="true">
+
+            <ScrollView
+                android:id="@+id/cashitdialog_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <!-- Header view container -->
+                    <LinearLayout
+                        android:id="@+id/alert_header_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical" />
+
+                    <!-- Alert Content -->
+                    <LinearLayout
+                        android:id="@+id/alert_body_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/cashitdialog_padding"
+                        android:divider="@drawable/cashitdialog_content_spacing_vertical"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <!--Title and icon-->
+
+                        <LinearLayout
+                            android:id="@+id/icon_title_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:animateLayoutChanges="true"
+                            android:divider="@drawable/cashitdialog_content_spacing_horizontal"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:showDividers="middle">
+
+                            <ImageView
+                                android:id="@+id/cashitdialog_icon_imageview"
+                                style="@style/cashitdialog.IconImage"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tv_dialog_title"
+                                style="@style/cashitdialog.Title"
+                                tools:text="This is your title" />
+                        </LinearLayout>
+
+                        <!--Message-->
+                        <TextView
+                            android:id="@+id/tv_dialog_content_desc"
+                            style="@style/cashitdialog.Message"
+                            android:animateLayoutChanges="true"
+                            tools:text="This is your description" />
+
+                        <!--buttons-->
+                        <LinearLayout
+                            android:id="@+id/alert_button_container_horiz"
+                            style="@style/cashitdialog.ButtonsContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="24dp"
+                            android:animateLayoutChanges="true"
+                            android:divider="@drawable/cashitdialog_buttons_spacing"
+                            android:orientation="horizontal"
+                            android:showDividers="middle"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/alert_buttons_container"
+                            style="@style/cashitdialog.ButtonsContainer"
+                            android:layout_marginTop="24dp"
+                            android:animateLayoutChanges="true"
+                            android:divider="@drawable/cashitdialog_buttons_spacing"
+                            android:orientation="vertical"
+                            android:showDividers="middle"
+                            android:visibility="gone"
+                            tools:visibility="visible">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Footer view container -->
+                    <LinearLayout
+                        android:id="@+id/alert_footer_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

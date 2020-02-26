@@ -1,0 +1,2 @@
+include ':app', ':cashitkdvdialog'
+rootProject.name='cashItDialog'
