@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="cashitDlgColorPrimary">#FACA00</color>
+    <color name="cahsitDlgColorPrimarySilvi">#EE424D</color>
     <color name="cashitDlgColorSecondary">#262626</color>
     <color name="cashitDlgColorThirtiary">#FFE163</color>
     <color name="cashitDlgColorgrey">#C9ACACAC</color>

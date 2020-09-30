@@ -49,7 +49,8 @@ public class Dlg extends AppCompatDialog {
         STYLE1,
         STYLE2,
         STYLE3,
-        STYLE4
+        STYLE4,
+        STYLE5
     }
     // region Properties
     private DialogParams params;
@@ -1051,6 +1052,9 @@ public class Dlg extends AppCompatDialog {
                 case STYLE4:
                     backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_outborder;
                     break;
+                case STYLE5:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi;
+                    break;
             }
             return backgroundDrawableId;
         }
@@ -1068,6 +1072,9 @@ public class Dlg extends AppCompatDialog {
                     break;
                 case STYLE4:
                     textColor = ContextCompat.getColor(context, R.color.cashitDlgColorSecondary);
+                    break;
+                case STYLE5:
+                    textColor = ContextCompat.getColor(context, R.color.cashitDlgColorWhite);
                     break;
             }
             return textColor;
@@ -1107,6 +1114,9 @@ public class Dlg extends AppCompatDialog {
                     break;
                 case STYLE4:
                     backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_outborder;
+                    break;
+                case STYLE5:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi;
                     break;
             }
             return backgroundDrawableId;
