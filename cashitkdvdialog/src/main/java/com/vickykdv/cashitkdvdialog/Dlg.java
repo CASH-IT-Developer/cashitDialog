@@ -49,7 +49,9 @@ public class Dlg extends AppCompatDialog {
         STYLE1,
         STYLE2,
         STYLE3,
-        STYLE4
+        STYLE4,
+        STYLE5,
+        STYLE6
     }
     // region Properties
     private DialogParams params;
@@ -1051,6 +1053,12 @@ public class Dlg extends AppCompatDialog {
                 case STYLE4:
                     backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_outborder;
                     break;
+                case STYLE5:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi;
+                    break;
+                case STYLE6:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi_outborder;
+                    break;
             }
             return backgroundDrawableId;
         }
@@ -1068,6 +1076,12 @@ public class Dlg extends AppCompatDialog {
                     break;
                 case STYLE4:
                     textColor = ContextCompat.getColor(context, R.color.cashitDlgColorSecondary);
+                    break;
+                case STYLE5:
+                    textColor = ContextCompat.getColor(context, R.color.cashitDlgColorWhite);
+                    break;
+                case STYLE6:
+                    textColor = ContextCompat.getColor(context, R.color.cahsitDlgColorPrimarySilvi);
                     break;
             }
             return textColor;
@@ -1108,6 +1122,12 @@ public class Dlg extends AppCompatDialog {
                 case STYLE4:
                     backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_outborder;
                     break;
+                case STYLE5:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi;
+                    break;
+                case STYLE6:
+                    backgroundDrawableId = R.drawable.cashitdialog_button_style_primary_silvi_outborder;
+                    break;
             }
             return backgroundDrawableId;
         }
@@ -1125,6 +1145,12 @@ public class Dlg extends AppCompatDialog {
                     break;
                 case STYLE4:
                     textColor = ContextCompat.getColor(context, R.color.cashitDlgColorSecondary);
+                    break;
+                case STYLE5:
+                    textColor = ContextCompat.getColor(context, R.color.cashitDlgColorWhite);
+                    break;
+                case STYLE6:
+                    textColor = ContextCompat.getColor(context, R.color.cahsitDlgColorPrimarySilvi);
                     break;
             }
             return textColor;
