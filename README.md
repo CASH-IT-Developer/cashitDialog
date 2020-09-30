@@ -1,5 +1,7 @@
 # cashitDialog
-Dialog with multi view ( Top , Center , Bottom )
+[![](https://jitpack.io/v/CASH-IT-Developer/cashitDialog.svg)](https://jitpack.io/#CASH-IT-Developer/cashitDialog)
+### Dialog with multi view ( Top , Center , Bottom )
+
 
 Top Dialog                 |      Center Dialog        |      Bottom Dialog
 :-------------------------:|:-------------------------:|:-------------------------:
@@ -7,7 +9,7 @@ Top Dialog                 |      Center Dialog        |      Bottom Dialog
 
 
 ### How To Use
-     implementation "com.github.CASH-IT-Developer:cashitDialog:1.0.0"
+     implementation "com.github.CASH-IT-Developer:cashitDialog:VERSION"
      ...
      ...
      
