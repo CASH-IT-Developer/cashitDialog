@@ -177,6 +177,9 @@ public class Dlg extends AppCompatDialog {
         // Cancel
         setCancelable(params.cancelable);
 
+        //cancel on touch outside
+        setCanceledOnTouchOutside(params.canceledOnTouchOutside);
+
         // Buttons
         populateButtons(params.context, params.buttons);
 
@@ -962,6 +965,11 @@ public class Dlg extends AppCompatDialog {
             return this;
         }
 
+        public Builder setCanceledOnTouchOutside(boolean canceledOnTouchOutside) {
+            this.params.canceledOnTouchOutside = canceledOnTouchOutside;
+            return this;
+        }
+
 //        public Builder setAutoDismissAfter(long duration) {
 //            this.params.autoDismissDuration = duration;
 //            return this;
@@ -1008,6 +1016,7 @@ public class Dlg extends AppCompatDialog {
         private List<cashitDialogActionButtonHoriz> buttonsHoriz = new ArrayList<>();
         private OnDismissListener onDismissListener;
         private boolean cancelable = true;
+        private boolean canceledOnTouchOutside = true;
         private long autoDismissDuration = -1;
 
         public boolean isDialogBodyEmpty() {
